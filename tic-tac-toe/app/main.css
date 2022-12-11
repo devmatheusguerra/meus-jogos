@@ -1,0 +1,125 @@
+body
+{
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+.app
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Tabuleiro */
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    display: none;
+    transition: opacity 0.5s;
+
+}
+
+table td{
+    width: 166px;
+    height: 166px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+#c1, #c2, #c4, #c5
+{
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#c3, #c6
+{
+    border-bottom: 1px solid #fff;
+}
+
+#c7, #c8
+{
+    border-right: 1px solid #fff;
+}
+
+
+
+button
+{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#status{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    left: 20px;
+    transition: opacity 0.5s;
+    color: #fff;
+}
+
+
+#status > .circle
+{
+    background-color: #888;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+#status > .circle.active
+{
+    background-color: #0f0;
+}
+
+#status > .circle.inactive
+{
+    background-color: #f00;
+}
+
+#status > .txt{
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.code  {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#turn{
+    text-align: center;
+}
+
+.visible
+{
+    opacity: 1;
+    margin: 20px 0;
+    border-radius: 10px;
+}

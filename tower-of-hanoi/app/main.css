@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #a1f3be;
+    user-select: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1{
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+h1 > a{
+    color: rgba(0,0,0,0.8);
+}
+
+
+.base {
+    width: 90%;
+    position: fixed;
+    bottom: 10px;
+    left: 5%;
+    height: 30px;
+    background-color: #d2b399;
+    border-radius: 5px;
+
+    overflow: visible;
+}
+
+.base .torre {
+    width: 2.5%;
+    height: 400px;
+    background-color: #d2b399;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -100%);
+    overflow: visible;
+}
+
+.torre::before{
+    display: block;
+    content: "";
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    left: -100px;
+}
+
+.torre::after{
+    display: block;
+    content: "";
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    right: -100px;
+}
+
+.t1 {
+    left: 20%;
+}
+
+.t2 {
+    left: 50%;
+}
+
+.t3 {
+    left: 80%;
+}
+
+.circle {
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -100%);
+    border-radius: 5px;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+    cursor: grab;
+}
+
+.c1 {
+    background-color: #492e6d;
+    left: calc(22.5%);
+    width: 30%;
+    bottom: 10px;
+}
+
+.c2 {
+    left: calc(22.5%);
+    background-color: #d3584d;
+    width: 25%;
+    bottom: 40px;
+}
+
+.c3 {
+    background-color: #d9744e;
+    left: calc(23%);
+    width: 20%;
+    bottom: 70px;
+}
+
+.c4 {
+    background-color: #5ab6de;
+    left: calc(23%);
+    width: 15%;
+    bottom: 100px;
+}
+
+.c5 {
+    background-color: #c1d14a;
+    left: calc(23%);
+    width: 10%;
+    bottom: 130px;
+}
+
+.c6 {
+    background-color: #efcd54;
+    left: calc(23%);
+    width: 5%;
+    bottom: 160px;
+}
+
+#moves {
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    font-size: 1.3rem;
+    color: #505050;
+    font-weight: bold;
+}
+
+#txt {
+    font-size: 1.3rem;
+    color: #555;
+    font-weight: 500;
+}
+
+#cron {
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    font-size: 1.3rem;
+    color: #505050;
+    font-weight: bold;
+}
