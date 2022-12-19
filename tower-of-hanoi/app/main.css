@@ -88,7 +88,7 @@ h1 > a{
 
 .c1 {
     background-color: #492e6d;
-    left: calc(22.5%);
+    left: 22.5%;
     width: 30%;
     bottom: 10px;
 }
